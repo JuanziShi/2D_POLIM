@@ -6,18 +6,18 @@ from util2dpolim.misc import save_hdf5, combine_outputs, pixel_list  # , import_
 import time as stopwatch
 
 if __name__ == '__main__':
-    prefix = 'C:\Users\MIPP\Google Drive\Bio POLIM\Analysis\Raw test data'
+    prefix = '/home/twodpolim/Desktop/Share/20170821-A'
     filelist = os.listdir(prefix)
 
     # bounds in x,y format: (left column, upper row, right column, lower row) -- where 'upper' and 'lower'
     # correspond to the way the image is plotted (matrix-style, origin in the top left corner of the picture)
-    bgbounds = [460, 25, 505, 500]  # [110,405,400,450]
-    fullbounds = [25, 30, 455, 500]  # [110, 80,400,360]
+    bgbounds = [440, 20, 490, 490]# [110,405,400,450]
+    fullbounds = [20, 20, 410, 510] # [110, 80,400,360]
     resolution = 1
     Nsplit = 20
     SNR = 3
     VFR = .6
-    Nprocs = 5
+    Nprocs = 3
     blankfit = False  # True#
     exclusion_bf = [28, 85, 442, 500]  # fullbounds # for most cases we can use fullbounds
     DoETruler = True  # False#

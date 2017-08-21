@@ -8,13 +8,13 @@ import time as stopwatch
 
 #### data directory and file name ####
 
-prefix = '/home/rafa/Desktop/share/2DMEH-PPV/SMmode'
-basename = 'bdm8area10'
+prefix = '/home/twodpolim/Desktop/Share/20170621/2D_POLIM/'
+basename = 'SMTQ1_1'
 
 SNR        = 1.0
 VFR        = .4
 spotradius = 4  # pixel
-blankfit   = True    # True 
+blankfit   = False #True
 exclusion_bf = [45,85,420,495] 
 
 

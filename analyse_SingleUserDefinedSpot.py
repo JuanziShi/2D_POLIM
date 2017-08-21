@@ -7,9 +7,10 @@ import time as stopwatch
 ######### USER INPUTS ######### USER INPUTS ######### USER INPUTS #########
 ### data directory and file name ####
 ## prefix is the data directory
-prefix = '/home/rafa/Desktop/share/160205-TQ1'
+prefix = '/home/twodpolim/Desktop/Share/20170815Eair-c-SO'
 #basename is the name of the SPE movie without the .SPE
-basename = '1028-B2'
+basename = 'enhanceairloop45'
+#coordinates have to be given as a list of first y and then x coordinates seperated by TAB in a file called 'userdefinedspot_basename' 
 
 ### Spot valudation parameters ###
 SNR               = 1.0

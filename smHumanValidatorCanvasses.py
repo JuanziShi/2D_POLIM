@@ -12,7 +12,7 @@ class IntPlotMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.axes_ints = self.fig.add_subplot(1,1,1)
         self.fig.subplots_adjust(left=0, bottom=0, top=1, right=1, wspace=0, hspace=0)
 
@@ -32,7 +32,7 @@ class IntPlotMplCanvas(FigureCanvas):
 class PortraitMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         # self.fig = Figure(figsize=(width, height), dpi=dpi)
         # self.axes = self.fig.add_subplot(1,1,1)
         self.fig, self.axes = plt.subplots( 2,3, figsize=(width, height), dpi=dpi, frameon=False ) 
@@ -58,7 +58,7 @@ class ProjectionsMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.axes_mex = self.fig.add_subplot(1,2,1)
         self.axes_mem = self.fig.add_subplot(1,2,2)
         self.fig.subplots_adjust(left=0, bottom=0, top=1, right=1, wspace=0, hspace=0)
@@ -80,7 +80,7 @@ class ETmodelMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.axes = self.fig.add_subplot(1,1,1, polar=True)
         self.fig.subplots_adjust(left=0, bottom=0, top=1, right=1, wspace=0, hspace=0)
 
@@ -100,7 +100,7 @@ class spotcoverageMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.axes = self.fig.add_subplot(1,1,1)
         self.fig.subplots_adjust(left=0, bottom=0, top=1, right=1, wspace=0, hspace=0)
 
@@ -119,7 +119,7 @@ class residualsMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.axes_portrait = self.fig.add_subplot(2,1,1)
         self.axes_ETportrait = self.fig.add_subplot(2,1,2)
         self.fig.subplots_adjust(left=0, bottom=0, top=1, right=1, wspace=0, hspace=0)

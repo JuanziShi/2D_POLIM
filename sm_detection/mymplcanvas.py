@@ -13,7 +13,7 @@ class MyMplCanvas(FigureCanvas):
     """Simple canvas with a sine plot."""
     def __init__(self, parent=None, width=5, height=4, dpi=100):
         self.fig = Figure(figsize=(width, height), dpi=dpi)
-        matplotlib.rcParams.update( {'font size': 9} )
+        matplotlib.rcParams.update( {'font.size': 9} )
         self.myaxes = self.fig.add_subplot(111)
         self.refimagejet = self.myaxes.imshow( np.random.random(size=(512,512)), cmap=cm.jet )
         self.cbar = self.fig.colorbar(self.refimagejet)
