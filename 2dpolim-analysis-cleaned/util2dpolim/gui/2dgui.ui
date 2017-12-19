@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1309</width>
+    <height>973</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>2</horstretch>
+    <verstretch>2</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>261</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Data import and basic parameters</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0" colspan="2">
+        <widget class="QComboBox" name="selectSPEComboBox"/>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QPushButton" name="selectDataDirPushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>select data directory</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="dataDirLabel">
+         <property name="font">
+          <font>
+           <pointsize>6</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="imageview" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>641</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="dataview" native="true">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>240</y>
+      <width>641</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>401</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Spot helper</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="clearAllSpotsPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>clear all</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="setBGSpotPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>set BG spot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="addSMPushButton">
+         <property name="text">
+          <string>add sm</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QPushButton" name="createSpotArrayPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>create array</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QPushButton" name="importSpotCoordsPushButton">
+         <property name="text">
+          <string>import</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QComboBox" name="spotTypeComboBox">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>square</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>circle</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2">
+        <widget class="QPushButton" name="addSignalSpotPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>add spot from selection</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="phaseOffsetLabel_6">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>shape:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="spotAttributeLabel">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>edge length:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QCheckBox" name="useExSpotCheckBox">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>use excitation spot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QSpinBox" name="spotEdgeLengthSpinBox">
+         <property name="value">
+          <number>6</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QCheckBox" name="useBorderBGCheckBox">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>use border bg</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="clearSpotPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>clear spot</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>10</y>
+      <width>351</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Analysis tools</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="corrMDoubleSpinBox">
+         <property name="maximum">
+          <double>1.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="SNRSpinBox">
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="cosineFitPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>cos fit</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="testPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>test</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QDoubleSpinBox" name="corrMDoubleSpinBox_2">
+         <property name="minimum">
+          <double>-1.570000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>1.570000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="findModDepthsPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>find M + ph</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="checkSpotValidityPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>check</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="phaseOffsetLabel_4">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>emission corr</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="clearAllSpotsPushButton_4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>ET model</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="ETrulerPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>ET ruler</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="phaseOffsetLabel_3">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>SNR limit</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="saveContrastImagesPushButton">
+         <property name="minimumSize">
+          <size>
+           <width>101</width>
+           <height>27</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>save images</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>10</y>
+      <width>271</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Spot info</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="leftMargin">
+        <number>8</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="spotInfoTextBrowser">
+         <property name="font">
+          <font>
+           <family>Ubuntu Mono</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QComboBox" name="showWhatComboBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>240</y>
+      <width>111</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>intensity trace</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>portrait data</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>portrait fit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>portrait residual</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="imageview_navbar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>880</y>
+      <width>641</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="dataview_navbar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>880</y>
+      <width>641</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="showStuffComboBox">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>240</y>
+      <width>71</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>spots</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M_ex</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M_em</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phase_ex</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>phase_em</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>r</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SNR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ET_ruler</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="showWhatDataComboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>191</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>sample</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blank</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>laser</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sample-bg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sample-bg-(blank-bg)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>(sample-bg-(blank-bg))/(laser-bg)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>261</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>aux tools</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="moveSpotRightPushButton">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>30</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="moveSpotUpPushButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>^</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="moveSpotLeftPushButton">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="moveSpotDownPushButton">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>21</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>v</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectLastDataDirPushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>load default</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="phaseOffsetLabel_5">
+     <property name="geometry">
+      <rect>
+       <x>164</x>
+       <y>0</y>
+       <width>71</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>move spot</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSlider" name="frameSlider">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>850</y>
+      <width>641</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

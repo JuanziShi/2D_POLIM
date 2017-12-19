@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="intPlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>1181</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="intPlotToolsWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="portraitPlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>220</y>
+      <width>561</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="projectionsPlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>571</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yarpPushButton">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>670</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(100, 255, 100, 255));
+font-weight: bold;
+font-size: 20pt;
+color: green;
+</string>
+    </property>
+    <property name="text">
+     <string>YARP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="narpPushButton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>670</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 100, 100, 255));
+font-weight: bold;
+font-size: 20pt;
+color: red;
+</string>
+    </property>
+    <property name="text">
+     <string>NARP</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="ProjectionsPlotToolsWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>760</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="ETmodelPlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>580</y>
+      <width>191</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="spotcoveragePlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>220</y>
+      <width>331</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="meanintPushButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>mean int</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="coveragePushButton">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>0</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>coverage</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="spotcoveragePlotToolsWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>550</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="imlostPushButton">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>610</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>help me, I'm lost with all these graphs</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>831</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>No files found.</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="residualsPlotWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>281</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="numericPortraitsPushButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>198</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>numeric</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="interpolatedPortraitsPushButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>198</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>interpolated</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>200</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type of portait shown: </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
